@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  background: linear-gradient(#87ceeb, #e0ffe0);
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.track {
+  position: relative;
+  height: 200px;
+  border-top: 4px dashed #444;
+  border-bottom: 4px dashed #444;
+  background: #c2f0c2;
+}
+
+.cat {
+  position: absolute;
+  font-size: 48px;
+  left: -100px;
+  animation: run 6s linear infinite;
+}
+
+.cat1 {
+  top: 20px;
+  animation-duration: 5s;
+}
+
+.cat2 {
+  top: 80px;
+  animation-duration: 6.5s;
+}
+
+.cat3 {
+  top: 140px;
+  animation-duration: 4.5s;
+}
+
+@keyframes run {
+  from {
+    left: -100px;
+  }
+  to {
+    left: 110%;
+  }
+}
